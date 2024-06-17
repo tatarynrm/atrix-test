@@ -1,0 +1,58 @@
+.home {
+
+    &__h1 {
+        font-size: 130px;
+        line-height: 160px;
+        letter-spacing: -1.05px;
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); /* 4 колонки однакової ширини */
+        grid-template-rows: auto;
+        gap: 10px; /* Проміжок між елементами */
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+    .item {
+        background-color: #4caf50;
+        color: white;
+        // padding: 20px;
+        text-align: center;
+        // font-size: 1.5rem;
+        height: 285px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: 1fr auto; /* Останній ряд буде мати висоту авто */
+        background-size: cover;
+        // padding: 20px;
+        color: white;
+        font-size: 1.5rem;
+        text-align: left;
+
+
+        span {
+          
+                align-self: end; /* Прижимає до нижнього краю */
+                justify-self: start; /* Прижимає до лівого краю */
+                background-color: rgb(110, 89, 184);
+                width: 100%;
+            padding: 10px;
+        
+        }
+       
+    }
+    
+    /* Для другого ряду встановлюємо кол-span */
+    .item:nth-child(5),
+    .item:nth-child(6) {
+        grid-column: span 2; /* Займає дві колонки */
+    }
+    
+    /* Останній елемент розтягуємо на всі колонки */
+    .item:last-child {
+        grid-column: span 4; /* Займає всі 4 колонки */
+    }
+}

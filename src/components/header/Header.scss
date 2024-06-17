@@ -1,0 +1,17 @@
+header {
+    .header__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .header__input {
+        outline: none;
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 10px;
+        width: 400px;
+    }
+}
