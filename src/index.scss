@@ -7,9 +7,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* Додайте цей код у ваш CSS файл */
+* {
+    /* Firefox */
+    scrollbar-width: none; /* Повністю приховує смугу прокрутки */
+    /* Internet Explorer 10+ */
+    -ms-overflow-style: none; /* Приховує смугу прокрутки */
+  }
+  
+  *::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
+  }
 
 body {
-    background-color: grey;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Inter Tight', sans-serif;
 
-}
+  }
+
+
+

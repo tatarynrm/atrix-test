@@ -10,7 +10,7 @@ const Home = () => {
         {title:'Boat Rental',link:'/boat-rent',img:'https://captainhookrentals.com/cdn/shop/products/IMG_0001-1_4000x@3x.progressive.jpg?v=1581835473'},
         {title:'Entertainment',link:'/entertainment',img:'https://images.alphacoders.com/995/995676.jpg'},
         {title:'Restaurants',link:'/restaurants',img:'https://wallpapercave.com/wp/wp1874183.jpg'},
-        {title:'Adventure',link:'/adventure',img:'https://lh3.googleusercontent.com/proxy/CNxRaaFKU3oS5GRWio673xRaSXRYLVsSpDKkoelmdYgKMFz0rI6KlvCQ_9iHi7cSGOGKaB3aTwuooIaMj9YN19Zm6uPNvsllbnpqBEstq9iVnqxuC3HZeopqE9OGBIqgCwfEmblJZ7LEHg'},
+        {title:'Adventure',link:'/adventure',img:'https://www.inspirechallenge.co.uk/wp-content/uploads/2019/08/Creating-Adventures.jpg'},
         {title:'Spa',link:'/spa',img:'https://c4.wallpaperflare.com/wallpaper/231/111/776/relax-girl-massage-wallpaper-preview.jpg'},
         {title:'Mobil',link:'/mobil',img:'https://wallpapers.com/images/featured/4k-car-g6a4f0e15hkua5oa.jpg'},
         {title:'Real estate',link:'/real-estate',img:'https://wallpapers.com/images/hd/real-estate-tropical-mansion-20c9os156eqcqd4j.jpg'},
@@ -19,6 +19,8 @@ const Home = () => {
     <div className='home'>
         <div className="home__inner container">
             <h1 className='home__h1'>WELCOME!</h1>
+
+            <h4 className='home__sub-title'>DISCOVER OUR PRODUCTS</h4>
 
 
 <div className="grid-container">

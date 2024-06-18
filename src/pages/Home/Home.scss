@@ -5,6 +5,14 @@
         line-height: 160px;
         letter-spacing: -1.05px;
         text-align: center;
+        letter-spacing: -1.05px;
+    }
+    .home__sub-title {
+        font-size: 21px;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 50px;
+        color: rgb(94, 93, 93);
     }
 
     .grid-container {
@@ -14,32 +22,45 @@
         gap: 10px; /* Проміжок між елементами */
         width: 100%;
         margin: 0 auto;
+      
     }
     
     .item {
         background-color: #4caf50;
         color: white;
-        // padding: 20px;
         text-align: center;
-        // font-size: 1.5rem;
         height: 285px;
         border-radius: 10px;
         display: grid;
         grid-template-rows: 1fr auto; /* Останній ряд буде мати висоту авто */
         background-size: cover;
-        // padding: 20px;
         color: white;
-        font-size: 1.5rem;
+        font-size: 30px;
         text-align: left;
-
+        font-weight: 500;
+        position: relative;
+        cursor: pointer!important;
+    
+        ::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.3); /* Колір і ступінь затемнення */
+        }
 
         span {
           
                 align-self: end; /* Прижимає до нижнього краю */
                 justify-self: start; /* Прижимає до лівого краю */
-                background-color: rgb(110, 89, 184);
+                // background-color: rgb(110, 89, 184);
                 width: 100%;
-            padding: 10px;
+                padding: 10px;
+                color: white;
+                // position: relative;
+
         
         }
        
@@ -55,4 +76,158 @@
     .item:last-child {
         grid-column: span 4; /* Займає всі 4 колонки */
     }
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .home {
+
+        &__h1 {
+            font-size: 80px;
+            line-height: 160px;
+            letter-spacing: -1.05px;
+            text-align: center;
+        }
+    
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* 4 колонки однакової ширини */
+            grid-template-rows: auto;
+            gap: 10px; /* Проміжок між елементами */
+            width: 100%;
+            margin: 0 auto;
+          
+        }
+        
+        .item {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            height: 285px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-rows: 1fr auto; /* Останній ряд буде мати висоту авто */
+            background-size: cover;
+            color: white;
+            font-size: 30px;
+            text-align: left;
+            font-weight: 500;
+            position: relative;
+            grid-column: span 2; /* Займає дві колонки */
+            cursor: pointer!important;
+        
+            ::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3); /* Колір і ступінь затемнення */
+            }
+    
+            span {
+              
+                    align-self: end; /* Прижимає до нижнього краю */
+                    justify-self: start; /* Прижимає до лівого краю */
+                    // background-color: rgb(110, 89, 184);
+                    width: 100%;
+                    padding: 10px;
+                    color: white;
+                    // position: relative;
+    
+            
+            }
+           
+        }
+        
+        /* Для другого ряду встановлюємо кол-span */
+        .item:nth-child(5),
+        .item:nth-child(6) {
+            grid-column: span 4; /* Займає дві колонки */
+        }
+        
+        /* Останній елемент розтягуємо на всі колонки */
+        .item:last-child {
+            grid-column: span 4; /* Займає всі 4 колонки */
+        }
+    }
+    
+}
+@media screen and (max-width: 400px) {
+    .home {
+
+        &__h1 {
+            font-size: 60px;
+            line-height: 160px;
+            letter-spacing: -1.05px;
+            text-align: center;
+        }
+    
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr); /* 4 колонки однакової ширини */
+            grid-template-rows: auto;
+            gap: 10px; /* Проміжок між елементами */
+            width: 100%;
+            margin: 0 auto;
+          
+        }
+        
+        .item {
+            background-color: #4caf50;
+            color: white;
+            text-align: center;
+            height: 285px;
+            border-radius: 10px;
+            display: grid;
+            grid-template-rows: 1fr auto; /* Останній ряд буде мати висоту авто */
+            background-size: cover;
+            color: white;
+            font-size: 30px;
+            text-align: left;
+            font-weight: 500;
+            position: relative;
+            grid-column: span 4; /* Займає дві колонки */
+        
+            ::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3); /* Колір і ступінь затемнення */
+            }
+    
+            span {
+              
+                    align-self: end; /* Прижимає до нижнього краю */
+                    justify-self: start; /* Прижимає до лівого краю */
+                    // background-color: rgb(110, 89, 184);
+                    width: 100%;
+                    padding: 10px;
+                    color: white;
+                    // position: relative;
+    
+            
+            }
+           
+        }
+        
+        /* Для другого ряду встановлюємо кол-span */
+        .item:nth-child(5),
+        .item:nth-child(6) {
+            grid-column: span 4; /* Займає дві колонки */
+        }
+        
+        /* Останній елемент розтягуємо на всі колонки */
+        .item:last-child {
+            grid-column: span 4; /* Займає всі 4 колонки */
+        }
+    }
+    
 }

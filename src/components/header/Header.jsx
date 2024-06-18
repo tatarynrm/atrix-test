@@ -1,6 +1,7 @@
 import './Header.scss'
 import logoSvg from '../../assets/images/svg/logo.svg'
 import { IoMdHeartEmpty } from "react-icons/io";
+import { CiSearch } from "react-icons/ci";
 const Header = () => {
     return (
         <header>
@@ -11,9 +12,10 @@ const Header = () => {
                     </div>
                     <div className="header__search">
                         <input className='header__input' type="text" placeholder='Search...' />
+                        <span className='search-icon'><CiSearch size={20}/></span>
                     </div>
                     <div className="header__menu">
-                    <IoMdHeartEmpty />
+                        <IoMdHeartEmpty />
                     </div>
                 </div>
             </div>
